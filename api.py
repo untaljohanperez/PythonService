@@ -26,7 +26,7 @@ class Overload(Resource):
     def get(self):
         self.overLoad(5)
         return { 
-            'time': datetime.now() 
+            'time': str(datetime.now())
         }
         
 api.add_resource(Product, '/')
