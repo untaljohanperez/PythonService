@@ -21,7 +21,7 @@ class Overload(Resource):
     def overLoad(self, seconds):
         waitTill = datetime.now() + timedelta(seconds=seconds)
         while (waitTill > datetime.now()):
-            print (seconds * seconds)
+            print (datetime.now())
 
     def get(self):
         self.overLoad(5)
