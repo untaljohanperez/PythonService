@@ -24,7 +24,7 @@ class Overload(Resource):
             print (seconds * seconds)
 
     def get(self):
-        self.overLoad(500)
+        self.overLoad(5)
         return { 
             'time': datetime.now() 
         }
